@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+For reference:
+http://developer.apple.com/library/mac/#documentation/General/Reference/InfoPlistKeyReference/Introduction/Introduction.html -->
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>	
+	<key>CFBundleIdentifier</key>
+	<string>${BUNDLE_IDENTIFIER}</string> <!-- com.apple.CocoaExamples.Sketch -->
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>${RELEASE_VERSION_NUMBER}</string> <!-- 2.0.1 -->
+	<key>CFBundleSignature</key>
+	<string>????</string> 
+	<key>CFBundleVersion</key>
+	<string>${BUILD_VERSION_NUMBER}</string> <!-- The build version number, 1 -->
+	<key>NSAppleScriptEnabled</key>
+	<string>NO</string>
+	<!-- <key>NSMainNibFile</key>
+	<string>Draw2</string> -->
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>	
+</dict>
+</plist>

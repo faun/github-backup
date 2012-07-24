@@ -1,0 +1,66 @@
+######################################################################################################################
+Project: Simple OS X MacRuby Application Starter Kit
+Summary: This is a bare bones project designed to work out the details of creating an OS X application  
+from a macruby program using Rake. This is to simplify my life when creating new projects. 	
+
+Goals:
+	Demonstrate a practical project structure.
+	Provide a demonstration of mixing Obj-C, C++ code with Ruby in the form of a bundle.
+	Have it be able to run as a macruby script or a fully compiled Application
+	Have a way to test both Obj-C, C++ and Ruby...
+	Use Clang for all builds.
+
+######################################################################################################################
+Contact:
+	Author: Samuel Holloway
+	URL: "https://github.com/sholloway/Simple-OS-X-MacRuby-Application-Starter-Kit"
+	Source: "git clone git://github.com/sholloway/Simple-OS-X-MacRuby-Application-Starter-Kit.git"
+	Contact: sholloway@gmail.com
+	Twitter: @sholloway
+######################################################################################################################	
+Details:
+	There are two types of builds
+		A GUI based Application Bundle
+		Depends on AppKit.framework and have a main.m that defines the main() function for the executable that starts an NSApplication instance
+		Needs a Info.plist file
+			
+		A command line executable that has an Application Bundle
+		- Does not depend on AppKit
+		- Does not have an Info.plist
+		- Requires a symbolic link to MyApp.app/Contents/MacOS/MyApp or alias, can put in /usr/local/bin or .bash_profile file
+			http://en.wikipedia.org/wiki/Symbolic_link
+			http://en.wikipedia.org/wiki/Alias_(Mac_OS)
+###################################################################################################################### 	
+Resources
+	http://stackoverflow.com/questions/2226749/gui-less-app-bundle
+	/Developer/Examples/Ruby/MacRuby/Sketch/Rakefile
+	http://martinfowler.com/articles/rake.html#FileTasks
+######################################################################################################################
+RUNTIME REQUIREMENTS:
+Mac version: Mac OS X Lion
+######################################################################################################################
+License:
+Open Source -The MIT License
+Please use at your own discretion. Drop me a line if you find the program useful. 
+######################################################################################################################
+Copyright (C) 2011-2012 Samuel Holloway. All rights reserved.
+######################################################################################################################
+Status: 
+Version 0.0.3
+----------------------------------------------------------------------------------------------------------------------
+- Added ability to build and run a GUI based application
+======================================================================================================================
+Status: 
+Version 0.0.2
+----------------------------------------------------------------------------------------------------------------------
+- Added ability to compile a framework
+- Demonstrate how to extend an Objective-C++ class in Ruby
+======================================================================================================================
+Version 0.0.1
+----------------------------------------------------------------------------------------------------------------------
+- Initial Commit
+- Added MIT License
+- Implemented create_terminal_app rake task
+- Implemented run_terminal_app
+- Implemented clean rake task
+- Created directory template
