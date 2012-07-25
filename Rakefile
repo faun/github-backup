@@ -48,7 +48,11 @@ require 'build_scripts/terminal_app'
 require 'build_scripts/gui_framework'
 require 'build_scripts/gui_app'
 
-task :default => :create_terminal_app
+require 'rspec/core/rake_task'
+
+RSpec::Core::RakeTask.new(:spec)
+
+task :default => :spec
 
 #Application Structure
 #Compiled GUI Application Directory Structure
